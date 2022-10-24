@@ -4,6 +4,9 @@ const reducerFn = (state = { counter: 0 }, action) => {
   if (action.type === "ICN") {
     return { counter: state.counter + 1 };
   }
+  if (action.type === "DCN") {
+    return { counter: state.counter - 1 };
+  }
 
   return state;
 };

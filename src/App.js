@@ -7,7 +7,9 @@ function App() {
   const increment = () => {
     dispatch({ type: "ICN" });
   };
-  const decrement = () => {};
+  const decrement = () => {
+    dispatch({ type: "DCN" });
+  };
 
   return (
     <>
