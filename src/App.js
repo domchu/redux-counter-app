@@ -10,6 +10,9 @@ function App() {
   const decrement = () => {
     dispatch({ type: "DCN" });
   };
+  const reset = () => {
+    dispatch({ type: "RES", payload: 0 });
+  };
 
   return (
     <>
@@ -17,6 +20,7 @@ function App() {
       <h3>{counter}</h3>
 
       <button onClick={increment}>Increment</button>
+      <button onClick={reset}>Reset</button>
       <button onClick={decrement}>Decrement</button>
     </>
   );
