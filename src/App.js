@@ -16,12 +16,21 @@ function App() {
 
   return (
     <>
-      <h2>Counter | Redux</h2>
-      <h3>{counter}</h3>
-
-      <button onClick={increment}>Increment</button>
-      <button onClick={reset}>Reset</button>
-      <button onClick={decrement}>Decrement</button>
+      <div className="counter-container">
+        <h2>Counter | Redux</h2>
+        <h3>{counter}</h3>
+        <div className="btn-container">
+          <button className="btn" onClick={increment}>
+            Increment
+          </button>
+          <button className="btn" onClick={reset}>
+            Reset
+          </button>
+          <button className="btn" onClick={decrement}>
+            Decrement
+          </button>
+        </div>
+      </div>
     </>
   );
 }
